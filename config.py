@@ -14,24 +14,24 @@ from dotenv import load_dotenv
 load_dotenv("config.env")
 
 
-API_HASH = getenv("API_HASH")
-API_ID = int(getenv("API_ID", ""))
+API_HASH = getenv("API_HASH", "9a86e743ad7cb3ac508262287f7b42c6")
+API_ID = int(getenv("API_ID", "26543176"))
 BLACKLIST_CHAT = getenv("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
     BLACKLIST_CHAT = [-1001473548283]
 BLACKLIST_GCAST = {int(x) for x in getenv("BLACKLIST_GCAST", "").split()}
-BOTLOG_CHATID = int(getenv("BOTLOG_CHATID") or 0)
+BOTLOG_CHATID = int(getenv("BOTLOG_CHATID") or -1001607421248)
 BOT_VER = "0.2.0@main"
 BRANCH = getenv("BRANCH", "main")
-CHANNEL = getenv("CHANNEL", "Lunatic0de")
-CMD_HANDLER = getenv("CMD_HANDLER", ".")
-DB_URL = getenv("DATABASE_URL", "")
+CHANNEL = getenv("CHANNEL", "xchwiki")
+CMD_HANDLER = getenv("CMD_HANDLER", "*")
+DB_URL = getenv("DATABASE_URL", "postgres://buzhmjcu:VH7okesuDWaa-Pt_XQ-B_JkHRhPDHRe4@isilo.db.elephantsql.com/buzhmjcu")
 GIT_TOKEN = getenv("GIT_TOKEN", "")
-GROUP = getenv("GROUP", "SharingUserbot")
+GROUP = getenv("GROUP", "AuroraManageRobot")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 PMPERMIT_PIC = getenv("PMPERMIT_PIC", None)
-REPO_URL = getenv("REPO_URL", "https://github.com/mrismanaziz/PyroMan-Userbot")
+REPO_URL = getenv("REPO_URL", "https://github.com/Wiki28/Man")
 STRING_SESSION1 = getenv("STRING_SESSION1", "")
 STRING_SESSION2 = getenv("STRING_SESSION2", "")
 STRING_SESSION3 = getenv("STRING_SESSION3", "")
