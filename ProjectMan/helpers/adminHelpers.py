@@ -61,7 +61,7 @@ async def CheckReplyAdmin(message: Message):
 async def Timer(message: Message):
     if len(message.command) > 1:
         secs = IntervalHelper(message.command[1])
-        return int(str(time()).split(".")[0] + secs.to_secs()[0])
+        return int(str(time()).split("+")[0] + secs.to_secs()[0])
     else:
         return 0
 
